@@ -17,7 +17,7 @@
         }
     </style>
 </head>
-
+<!--Screen that user is presented with on login-->
 <body>
     <div class="container">
         <div id="login">
@@ -32,7 +32,7 @@
             <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
         </div>
     </div>
-
+    <!--Displays the users spotify information-->
     <script id="user-profile-template" type="text/x-handlebars-template">
         <h1>Logged in as {{display_name}}</h1>
         <div class="media">
@@ -69,7 +69,7 @@
             <dd class="text-overflow">{{refresh_token}}</dd>
         </dl>
     </script>
-
+    <!--Uses jQuery to get data-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
