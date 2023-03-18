@@ -262,3 +262,94 @@ const APPController = (function(UICtrl, APICtrl) {
 
 // will need to call a method to load the genres on page load
 APPController.init();
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Fetching User Data
+
+
+const _getTopTracks = async(token, genreId) => {
+
+    const limit = 10;
+
+    const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?limit=${limit}`, {
+        method: 'GET',
+        headers: { 'Authorization': 'Bearer ' + token }
+    });
+
+    const data = await result.json();
+    return data.playlists.items;
+}
+
+const _getTopArtists = async(token, genreId) => {
+
+    const limit = 10;
+
+    const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?limit=${limit}`, {
+        method: 'GET',
+        headers: { 'Authorization': 'Bearer ' + token }
+    });
+
+    const data = await result.json();
+    return data.playlists.items;
+}
+
+const _getTopGenres = async(token, genreId) => {
+
+    const limit = 10;
+
+    const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?limit=${limit}`, {
+        method: 'GET',
+        headers: { 'Authorization': 'Bearer ' + token }
+    });
+
+    const data = await result.json();
+    return data.playlists.items;
+}
+
+
+// Displaying user data
+
+
+const loadTopTracks = async() => {
+    //get the token
+    const token = await APICtrl.getToken();
+    //store the token onto the page
+    UICtrl.storeToken(token);
+    //get the genres
+    const tracks = await APICtrl.getTrack(token); //DISPAYING THE DATA
+    //populate genres select element
+    tracks.forEach(element => UICtrl.createTracks(element.name, element.id));
+}
+
+const loadTopArtists = async() => {
+    //get the token
+    const token = await APICtrl.getToken();
+    //store the token onto the page
+    UICtrl.storeToken(token);
+    //get the genres
+    const artist = await APICtrl.getArtist(token); //DISPAYING THE DATA
+    //populate genres select element
+    artist.forEach(element => UICtrl.createGenre(element.name, element.id));
+}
+
+const loadGenres = async() => {
+    //get the token
+    const token = await APICtrl.getToken();
+    //store the token onto the page
+    UICtrl.storeToken(token);
+    //get the genres
+    const genres = await APICtrl.getGenres(token); //DISPAYING THE DATA
+    //populate genres select element
+    genres.forEach(element => UICtrl.createGenre(element.name, element.id));
+}
