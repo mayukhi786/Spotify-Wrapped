@@ -1,0 +1,47 @@
+Technical Documentation
+
+
+
+Introduction
+
+This documentation is a piece of work designed solely for the purpose of a project for respective coursework. It elaborates the technical aspect and the know-how of the project from a first principle approach to a user who has absolutely limited knowledge about using APIs, integrated web-design, OAuth and its extended fundamentals being used in this project. This documentation is meant for a brief understanding for the user to understand, analyze, evaluate and implement this in future for their own benefits and their growth.
+
+What is this Project?
+
+This project evolves using Spotify’s API to display a user’s statistics based on their listening history with detailed overview of the artists, genres, playlists etc and hence proves to be a “Spotify Wrapped” but accessible anytime and anywhere. We further extended the scope of our project to use this website to add more features like a song recommendation generator (back then Spotify didn’t have their Spotify AI suggestion beta bot). We use this using the same statistics which we have received and to come up with these suggestions. 
+
+To be added-
+Why? 
+Who is this documentation intended for?
+Division of codeflow
+Enriching Experience
+Further improvements and prospective possibilities
+
+Division of the codeflow-
+Generator
+Generator.js
+index.html
+main.css
+OAuth and API fetching
+index.html
+app.js
+
+Generator
+
+*Introduction to be added*
+
+Generator.js
+
+This is a JavaScript module pattern that defines two modules: APIController and UIController.
+The APIController module handles API interactions with the Spotify Web API. It has private methods for getting an access token, getting genres, getting playlists by genre, getting tracks for a playlist, and getting a single track. The public methods provide access to these private methods.
+The UIController module handles the user interface. It has public methods for getting the input fields, creating genre and playlist select list options, creating a track list group item, creating a song detail, resetting the track detail, tracks, and playlist, storing and getting the access token.
+These two modules can be used together to create a web application that interacts with the Spotify Web API and displays the results to the user in a user-friendly way.
+
+This is a JavaScript code for a website that uses Spotify's API. The code defines two modules: APIController and UIController.
+APIController is an IIFE (Immediately Invoked Function Expression) that returns an object with five methods:
+getToken: a method that sends a POST request to Spotify's API to get an access token using the client_id and client_secret as authentication. The method returns a Promise that resolves to the access token.
+getGenres: a method that sends a GET request to Spotify's API to get the available music genres. The method receives an access token as a parameter and returns a Promise that resolves to an array of music genres.
+getPlaylistByGenre: a method that sends a GET request to Spotify's API to get playlists based on a music genre. The method receives an access token and a genre ID as parameters, and returns a Promise that resolves to an array of playlists.
+getTracks: a method that sends a GET request to Spotify's API to get a list of tracks for a given playlist. The method receives an access token and a tracks endpoint as parameters, and returns a Promise that resolves to an array of tracks.
+getTrack: a method that sends a GET request to Spotify's API to get a specific track. The method receives an access token and a track endpoint as parameters, and returns a Promise that resolves to the track data.
+
