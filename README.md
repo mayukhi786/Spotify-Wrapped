@@ -8,18 +8,39 @@ We are developing an interactive web application that leverages the Spotify API 
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Windows: Win + R 'cmd' Input
+
+git clone git@gitlab.cci.drexel.edu:fds23/63/team-18/spotify-api-page.git && cd spotify-api-page
+npm start
+
+
+Linux: Open console Input
+
+git clone git@gitlab.cci.drexel.edu:fds23/63/team-18/spotify-api-page.git && cd spotify-api-page
+npm start
+
+Server will open on localhost:3000
+Navigate to localhost:3000 to access app
 
 ## Dependencies and Integrations With Other Systems
+-npm/node
+-express
+-react
+-Vercel
+-Development environment to run server such as VSCode
+-Spotify for Developers
+-babel
+-axios
+-cookie parser
+-netlify lambda
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
 ## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+Email any of us for questions and support:
+Luke Fabry- lf652@drexel.edu
+Logan Honeybone- ldh67@drexel.edu
+Jainam Kashyap- jk3862@drexel.edu
+Mayukhi Khan- mk3942@drexel.edu
 
 
 ## Authors and acknowledgment
@@ -31,4 +52,4 @@ Ui/Ux - Luke Fabry
 Backend developer/Security Specialist - Jainam Kashyap
 
 ## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+As of 06/02/2023 we will no longer be working on the project and it will be in its final state.
