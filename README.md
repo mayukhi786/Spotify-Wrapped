@@ -24,21 +24,33 @@ Navigate to localhost:3000 to access app
 -npm/node
 
 -express
+
 -react
+
 -Vercel
+
 -Development environment to run server such as VSCode
+
 -Spotify for Developers
+
 -babel
+
 -axios
+
 -cookie parser
+
 -netlify lambda
 
 
 ## Authors and acknowledgment
 Current developers:
+
 Project Manager/Fullstack Developer - Mayukhi Khan
+
 Ui/Ux - Logan Honeybone 
+
 Ui/Ux - Luke Fabry
+
 Backend developer/Security Specialist - Jainam Kashyap
 
 ## Project status
