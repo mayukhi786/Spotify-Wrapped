@@ -1,8 +1,9 @@
 ## Name
-Spotify Wrapped 
+Spotify Wrapped -- See Your Music Stats!
 
 ## Description
-We are developing an interactive web application that leverages the Spotify API to fetch and render personalized user data. We have seamless user authentication using OAuth authorization to facilitate secure and hassle-free user login, ensuring a smooth and protected experience. Uses ReactJS with JAvaScript to dynamically generate and update components based on the user's preferences and Spotify data. Additionally, uses HTML and CSS for structuring and styling the application, respectively. Backend set up using Node, a versatile JavaScript runtime environment, to handle server-side operations.
+Access your personal music statistics including top artists, songs, playlists and genres with a quick login!
+Built with React, JavaScript, Node, HTML/CSS, MaterialUI, Spotify API, Vercel, OAuth techniques, Agile Methodology
 
 ## Installation
 Windows: Win + R 'cmd' Input
