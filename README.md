@@ -33,16 +33,7 @@ Navigate to localhost:3000 to access app
 -netlify lambda
 
 
-## Support
-Email any of us for questions and support:
-Luke Fabry- lf652@drexel.edu
-Logan Honeybone- ldh67@drexel.edu
-Jainam Kashyap- jk3862@drexel.edu
-Mayukhi Khan- mk3942@drexel.edu
-
-
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
 Current developers:
 Project Manager/Fullstack Developer - Mayukhi Khan
 Ui/Ux - Logan Honeybone 
