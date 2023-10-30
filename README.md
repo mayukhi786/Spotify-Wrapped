@@ -22,6 +22,7 @@ Navigate to localhost:3000 to access app
 
 ## Dependencies and Integrations With Other Systems
 -npm/node
+
 -express
 -react
 -Vercel
